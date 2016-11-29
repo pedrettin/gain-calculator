@@ -1,0 +1,23 @@
+{
+  "name": "gain-calculator",
+  "version": "1.0.0",
+  "description": "calculating information gain",
+  "main": "gain.js",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oeran93/gain-calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oeran93/gain-calculator/issues"
+  },
+  "homepage": "https://github.com/oeran93/gain-calculator#readme"
+}
