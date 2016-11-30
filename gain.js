@@ -24,6 +24,4 @@ let gain_calc = {
 
 }
 
-console.log(gain_calc.gain([0,0,0,1,1,1],[1,1,0],[1,0],[0]))
-
 module.exports = gain_calc
