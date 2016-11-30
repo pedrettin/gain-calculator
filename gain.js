@@ -12,15 +12,18 @@ let gain_calc = {
 			entr += -(n/elm.length)*Math.log2(n/elm.length)
 		,0)
 		return entropy
-	}
+	},
 
 	gain: function (all, ...args) {
-		let gain = entropy(all)
+		let gain = this.entropy(all)
 		gain -= _.reduce(args, (entr, arg) => {
-			return entr += (arg.length/all.length)*entropy(arg)
+			return entr += (arg.length/all.length)*this.entropy(arg)
 		},0)
+		return gain
 	}	
 
 }
+
+console.log(gain_calc.gain([0,0,0,1,1,1],[1,1,0],[1,0],[0]))
 
 module.exports = gain_calc
