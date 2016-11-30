@@ -15,3 +15,11 @@ function entropy (elm) {
 function gain (all, left, right) {
 	return entropy(all) - ((left.length/all.length)*entropy(left) + (right.length/all.length)*entropy(right))
 }
+
+console.log(
+	gain(
+		process.argv[2].split(',').map(Number),
+		process.argv[3].split(',').map(Number),
+		process.argv[4].split(',').map(Number)
+	)
+)
